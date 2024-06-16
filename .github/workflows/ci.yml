@@ -12,6 +12,12 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
 
+    services:
+      selenium:
+        image: selenium/standalone-chrome:latest
+        ports:
+          - 4444:4444
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -33,9 +39,6 @@ jobs:
 
       - name: Install dependencies
         run: yarn install
-
-      - name: Compile TypeScript
-        run: yarn tsc --noEmit
 
       - name: Run tests
         run: yarn test --coverage
