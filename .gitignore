@@ -1,0 +1,15 @@
+.cache/
+build/
+.session/
+.log
+.status
+.profile
+target/
+.env
+.parcel-cache/
+
+node_modules/
+coverage/
+.idea/
+dist/
+build/
