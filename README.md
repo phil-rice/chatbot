@@ -23,6 +23,10 @@ npm start
 # Elasticsearch
 Is configurable in the .env file
 
+# Open AI
+* All the prompt engineering is done in the [openai.ts](src/clients/openai.ts) file.
+* The choice of which url to use and the apikey are in the .env file (which you need to make as described above)
+
 # Issues
 * Currently no known issues
 
